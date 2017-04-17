@@ -42,7 +42,7 @@
                 <ul class="list-unstyled contact-list">
                     <li class="email"><i class="fa fa-envelope"></i><a href="mailto:saurabhkumar.spsu@gmail.com">saurabhkumar.spsu@gmail</a></li>
                     <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/saurabh-kumar-22179227/">saurabh-kumar-22179227</a></li>
-                    <li class="github"><i class="fa fa-github"></i><a href="https://github.com/saurabhkumar1989" >saurabhkumar</a></li>
+                    <li class="github"><i class="fa fa-github"></i><a href="https://github.com/saurabhkumar1989">saurabhkumar</a></li>
                 </ul>
             </div><!--//contact-container-->
             <div class="education-container container-block">
@@ -98,7 +98,7 @@
                     </div><!--//meta-->
                     <div class="details">
                         <p>Devised a churning algorithm to find out the loyalty of the customerDeveloped an algorithm for analysing customer behaviour, to determine their loyalty.</p>  
-                        <p>Developed HTML web pages powered by bootstrap and AngularJs</p>
+                        <p>Developed HTML web pages powered by bootstrap and AngularJs.</p>
                     </div><!--//details-->
                 </div><!--//item-->                
             </section><!--//section-->
@@ -106,13 +106,13 @@
             <section class="section projects-section">
                 <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
                 <div class="intro">
-                    <p>Academic Projects</p>
+                    <h3 class="job-title">Academic Projects</h3>
                 </div><!--//intro-->
                 <div class="item">
 
                     <span class="project-title"><a href="https://github.com/saurabhkumar1989/text_classifier"><strong>Text Classifier</strong></a></span> <br> <span class="project-tagline">Primary objective of this project is to build a <strong>machine learning </strong>based text classifier system to find out the traffic-related incidents in the social media posts.</span>
-                    <a data-toggle="collapse" href="#text-classifier" aria-expanded="false" aria-controls="text-classifier"><strong>More</strong></a>
-                    <div class="collapse" id="text-classifier">
+                    <a data-toggle="collapse" href="#text-classifier" aria-expanded="false" aria-controls="text-classifier" id ='btn1' style="font-weight: 900;"><strong>Show Less</strong></a>
+                    <div class="collapse in" id="text-classifier">
                       <div class="well">
                         <h4>System Description</h4>
                         <p>The overall system is composed of four parts.</p>
@@ -141,11 +141,12 @@
                     </div>
                       </div>                    
                 </div><!--//item-->
+                <div class="clearfix" id='margin20'></div>
                 <div class="item">
 
                     <span class="project-title"><a href="https://github.com/saurabhkumar1989/traffic_data_backend"><strong>Web Application to Visuliaze Traffic Incidents</strong></a></span><br> <span class="project-tagline">The main aim of this project is to build a web application over the twitter data to visualise the traffic conditions with city level granularity using <strong>MongoDb</strong> and MySQL.</span>
-                    <a data-toggle="collapse" href="#web-application" aria-expanded="false" aria-controls="web-application"><strong>More</strong></a>
-                    <div class="collapse" id="web-application">
+                    <a data-toggle="collapse" href="#web-application" aria-expanded="false" aria-controls="web-application" id ='btn2' style="font-weight: 900;"><strong>Show Less</strong></a>
+                    <div class="collapse in" id="web-application">
                       <div class="well">
 
                         <h4>System Details</h4>
@@ -155,7 +156,7 @@
                          <p>This layer composed of Data Extractor, Web Framework and Inverted Index builder</p>
                         <ul class="">
                             <li><strong>Data Extractor</strong><p>Python script hits the twitter rest API's and stores the data in the MySQL server hosted on Amazon EC2.</p></li>
-                            <li><strong>Inverted Index Builder</strong><p>Python program to build index data structure in Mongodb that searches for and identifies items in a database correspond to keywords or characters specified by the user.</p></li>
+                            <li><strong>Inverted Index Builder</strong><p>Python program to build index data structure in MongoDB that searches for and identifies items in a database correspond to keywords or characters specified by the user.</p></li>
                             <li><strong>Web framework</strong><p>django framework to server all the HTTP request.</p></li>
                         </ul>
                         <h4>Client Tier</h4>
@@ -164,8 +165,6 @@
                         <h4>Enterprise Tier</h4>
                         <p>This layer contains MongoDB database having inverted indexes for search and MySQL database for the tweet data like tweet text, user information etc.</p>
                         
-
-
                         <img class="img-responsive" src="https://raw.githubusercontent.com/saurabhkumar1989/traffic_data_backend/master/images/Capture.PNG" alt="system-overview">
                     </div>
                       </div>                    
@@ -181,7 +180,7 @@
                     </div>
                     <div class="item">
                         <h4 class="level-title">Databases : </h4>
-                        <span>MySql and MongoDB</span>
+                        <span>MySQL and MongoDB</span>
                     </div>
                     <div class="item">
                         <h4 class="level-title">Big Data Tool : </h4>
@@ -190,6 +189,10 @@
                     <div class="item">
                         <h4 class="level-title">Web Technologies : </h4>
                         <span>HTML5, CSS3&less, Angularjs, Django, jQuery, AWS and Git</span>
+                    </div>
+                    <div class="item">
+                        <h4 class="level-title">Machine Learning Stack : </h4>
+                        <span>Tensorflow, gensim, scikit-learn</span>
                     </div>
                 </div>  
             </section><!--//skills-section-->

@@ -293,3 +293,7 @@ p {
 }
 /* Large devices (large desktops, 1200px and up) */
 /* Ex-Large devices (large desktops, 1200px and up) */
+#margin20{
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
