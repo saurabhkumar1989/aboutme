@@ -297,3 +297,14 @@ p {
   margin-top: 22px;
   margin-bottom: 22px;
 }
+#margin10{
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.prj-time{
+   position: absolute;
+    color: #97AAC3;
+    font-size: 14px;
+    right: 31%;
+}
