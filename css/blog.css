@@ -21,7 +21,7 @@ h6, .h6 {
   margin-top: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
-  color: #333;
+  color: #545E6C;
 }
 
 
@@ -293,7 +293,7 @@ a:hover,a:active {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #999;
+  background-color: rgba(153, 153, 153, 0.66);;
 }
 
 .prj-image:hover .overlay {
@@ -363,3 +363,13 @@ a:hover,a:active {
 }
 
 
+
+#img-web-app {
+    height: 70%;
+    width: 70%;
+}
+
+#img-pubmed {
+    height: 80%;
+    width: 70%;
+}

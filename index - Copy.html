@@ -44,7 +44,7 @@
 </head>
 
 <body data-gr-c-s-loaded="true">
-    <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
+    <nav class="navbar navbar-inverse navbar-fixed-top" id='navbar'>
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -56,8 +56,8 @@
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="file:///C:/Users/saukumar/Documents/mycv/aboutme/index.html#">Home</a></li>
-                    <li><a href="file:///C:/Users/saukumar/Documents/mycv/aboutme/index.html#about">Projects</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">Projects</a></li>
                     <li><a href="https://www.linkedin.com/in/saurabh-kumar-22179227/">Contact</a></li>
                 </ul>
             </div>
@@ -93,33 +93,25 @@
                 <!-- /.blog-post -->
                 <div class="about-me-project">
                     <span><i class="fa fa-archive"></i><span class="about-me-project-inner">Projects</span></span>
-                    <div class="project-section">
+                    <div class='project-section'>
                         <div class="project-heading">
                             <a href="https://github.com/saurabhkumar1989/traffic_data_backend"><strong>Social media mining to locate traffic conditions</strong></a>
                             <div class="project-time">August 2017 - Current</div>
                         </div>
-                        <div class="clearfix" id="margin10"></div>
+                        <div class="clearfix" id='margin10'></div>
                         <div class="proj-summary-text">
                             <div class="project-description">
                                 <span class="project-tagline">The primary objective of this project is to triangulate road traffic incidents using social media data. Once geo-location data of the traffic incidents extracted, build spatial data layer over from the over Google map to display all of these incidents.</span>
                             </div>
-                            <div class="project-description well">
-                                <ul class="">
-                                    <li>
-                                        <p>Using deep learning skip gram based feature extraction method from text.</p>
+                            <div class='project-description well'>
+                                •	Using deep learning skip gram based feature extraction method from text.
+•	Created text classifier models using Neural Network, Support Vector Machine (with Gaussian and polynomial kernel) and accuracy of 93 %.
+•	Geo parsing location information using Name Entity recognition for buildings and gazetteer for toponym detection.
 
-                                    </li>
-                                    <li>
-                                        <p>Created text classifier models using Neural Network, Support Vector Machine (with Gaussian and polynomial kernel) and accuracy of 93 %.</p>
-                                    </li>
-                                    <li>
-                                        <p>Geo parsing location information using Name Entity recognition for buildings and gazetteer for toponym detection. </p>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
-                        <div class="clearfix" id="margin10"></div>
-                        <div class="project-imgs clearfix text-center">
+                        <div class="clearfix" id='margin10'></div>
+                        <div class='project-imgs clearfix text-center'>
                             <!--<div class="prj-images">
                                 <div class="prj-image center-block"><img src="https://raw.githubusercontent.com/saurabhkumar1989/traffic_data_backend/master/images/Capture.PNG" class="img-responsive" alt="Cinque Terre">
                                     <span class="text-center">System Overview</span>
@@ -129,129 +121,87 @@
                                 </div>
                             </div>-->
                         </div>
-                        <div class="clearfix" id="margin20"></div>
+                        <div class="clearfix" id='margin20'></div>
                     </div>
-                    <div class="project-section">
-                        <div class="project-heading">
-                            <a href="https://github.com/saurabhkumar1989/traffic_data_backend"><strong>Web Application to Visualize Traffic Incidents</strong></a>
-                            <div class="project-time">January 2017 - May 2017</div>
-                        </div>
-                        <div class="clearfix" id="margin10"></div>
-                        <div class="proj-summary-text">
-                            <div class="project-description">
-                                <span class="project-tagline">Designed web application architecture to visualize the road traffic incidents, using Google maps using <strong>MongoDb</strong> and MySQL.</span>
-                            </div>
-                        </div>
-                        <div class="clearfix" id="margin10"></div>
-                        <div class="project-description well">
-                            <h4><strong>System Details</strong></h4>
-                            <p>The overall system is composed of...</p>
-
-                            <h4><strong>Application Tier</strong></h4>
-                            <p>This layer composed of Data Extractor, Web Framework and Inverted Index builder</p>
-                            <ul class="">
-                                <li><strong>Data Extractor</strong>
-                                    <p>Python script hits the twitter rest API's and stores the data in the MySQL server hosted on Amazon EC2.</p>
-                                </li>
-                                <li><strong>Inverted Index Builder</strong>
-                                    <p>Python program to build index data structure in MongoDB that searches for and identifies items in a database correspond to keywords or characters specified by the user.</p>
-                                </li>
-                                <li><strong>Web framework</strong>
-                                    <p>django framework to server all the HTTP request.</p>
-                                </li>
-                            </ul>
-                            <h4><strong>Client Tier</strong></h4>
-                            <p>A responsive graphical user interface powered by Bootstrap, jquery and HTML5 for application to users to interact with the data.</p>
-
-                            <h4><strong>Enterprise Tier</strong></h4>
-                            <p>This layer contains MongoDB database having inverted indexes for search and MySQL database for the tweet data like tweet text, user information etc.</p>
-
-
-                            <h4>Technologies Used</h4>
-                            <ul class="">
-                                <li>
-                                    <p><strong>Programming Language</strong>: Python, javascript</p>
-                                </li>
-                                <li>
-                                    <p><strong>Databses</strong>: MySQL and MongoDB</p>
-                                </li>
-                                <li>
-                                    <p><strong>Web Technologies</strong>: Django, jQuery and Bootstrap 3</p>
-                                </li>
-                                <li>
-                                    <p><strong>Cloud Computing Platform</strong>: AWS EC2 Instance</p>
-                                </li>
-
-                            </ul>
-                            <div class="project-imgs clearfix text-center">
-                                <div class="prj-images">
-                                    <div class="prj-image center-block"><img id='img-web-app'src="https://raw.githubusercontent.com/saurabhkumar1989/traffic_data_backend/master/images/Capture.PNG" class="img-responsive" alt="Cinque Terre">
-                                        <span class="text-center">System Overview</span>
-                                        <div class="overlay">
-                                            <div class="image-text"><a href="https://github.com/saurabhkumar1989/traffic_data_backend">Click Here for More</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clearfix" id="margin20"></div>
-                    </div>
-                    <!-- <div class="project-section">
+                    <div class='project-section'>
                         <div class="project-heading">
                             <a href="https://github.com/saurabhkumar1989/text_classifier"><strong>Text Classifier</strong></a>
                             <div class="project-time">August 2014 - December 2016</div>
                         </div>
-                        <div class="clearfix" id="margin10"></div>
+                        <div class="clearfix" id='margin10'></div>
                         <div class="proj-summary-text">
                             <div class="project-description">
                                 <span class="project-tagline">The main of this project is to build a classifier that can segment out the twitter post from the road traffic incidents from another post. In this project, the bag of words technique is used for text feature extraction and Neural Network algorithm as a classifier.</span>
                             </div>
                         </div>
-                        <div class="clearfix" id="margin10"></div>
-                        <div class="project-imgs clearfix text-center">
+                        <div class="clearfix" id='margin10'></div>
+                        <div class='project-imgs clearfix text-center'>
                             <div class="prj-images">
-                                <div class="prj-image center-block"><img src="https://raw.githubusercontent.com/saurabhkumar1989/text_classifier/master/files/overall.PNG" class="img-responsive" alt="Img">
+                                <div class="prj-image center-block"><img src="https://raw.githubusercontent.com/saurabhkumar1989/text_classifier/master/files/overall.PNG" class="img-responsive" alt="Cinque Terre">
                                     <span class="text-center">System Overview</span>
                                     <div class="overlay">
-                                        <div class="image-text"><a href="https://github.com/saurabhkumar1989/text_classifier">Click Here for More</a></div>
+                                        <div class="image-text"><a href='https://github.com/saurabhkumar1989/text_classifier'>Click Here for More</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="clearfix" id="margin20"></div>
-                    </div>-->
+                        <div class="clearfix" id='margin20'></div>
+                    </div>
                     <!--proj-end-->
-                    <div class="project-section">
+                    <div class='project-section'>
                         <div class="project-heading">
                             <a href="https://github.com/saurabhkumar1989/pubmedAPI/"><strong>PubMed Article Management</strong></a>
                             <div class="project-time">September 2016 - November 2016</div>
                         </div>
-                        <div class="clearfix" id="margin10"></div>
+                        <div class="clearfix" id='margin10'></div>
                         <div class="proj-summary-text">
                             <div class="project-description">
                                 <span class="project-tagline">The primary goal of this project was to automate the document collection methods for the existing <a href="https://textomining.com/textomining" style="font-weight: 900;">texttomining</a> application. Previously, documents first downloaded in the XML format from the PubMed manually and then placed into an FTP server to automate the process, a python program was developed to extract the document using the PubMed API's and store it into a MySQL database.</span>
                             </div>
                         </div>
-                        <div class="clearfix" id="margin10"></div>
-                        <div class="project-imgs clearfix text-center">
-                            <!--<div class="prj-images">
-                                <div class="prj-image center-block"><img id="img-pubmed" src="https://github.com/saurabhkumar1989/pubmedAPI/blob/master/files/pubmedimage1.jpg?raw=true" class="img-responsive" alt="Image">
+                        <div class="clearfix" id='margin10'></div>
+                        <div class='project-imgs clearfix text-center'>
+                            <div class="prj-images">
+                                <div class="prj-image center-block"><img src="https://github.com/saurabhkumar1989/pubmedAPI/blob/master/files/pubmedimage1.jpg?raw=true" class="img-responsive" alt="Cinque Terre">
                                     <span class="text-center">System Overview</span>
                                     <div class="overlay">
-                                        <div class="image-text"><a href="https://github.com/saurabhkumar1989/pubmedAPI/">Click Here for More</a></div>
+                                        <div class="image-text"><a href='https://github.com/saurabhkumar1989/pubmedAPI/'>Click Here for More</a></div>
                                     </div>
                                 </div>
-                            </div>-->
+                            </div>
                         </div>
-                        <div class="clearfix" id="margin20"></div>
+                        <div class="clearfix" id='margin20'></div>
                     </div>
-
+                    <div class='project-section col-md-12'>
+                        <div class="project-heading">
+                            <a href="https://github.com/saurabhkumar1989/traffic_data_backend"><strong>Web Application to Visualize Traffic Incidents</strong></a>
+                            <div class="project-time">January 2017 - May 2017</div>
+                        </div>
+                        <div class="clearfix" id='margin10'></div>
+                        <div class="proj-summary-text">
+                            <div class="project-description">
+                                <span class="project-tagline">Designed web application architecture to visualize the road traffic incidents, using Google maps using <strong>MongoDb</strong> and MySQL.</span>
+                            </div>
+                        </div>
+                        <div class="clearfix" id='margin10'></div>
+                        <div class='project-imgs clearfix text-center'>
+                            <div class="prj-images">
+                                <div class="prj-image center-block"><img src="https://raw.githubusercontent.com/saurabhkumar1989/traffic_data_backend/master/images/Capture.PNG" class="img-responsive" alt="Cinque Terre">
+                                    <span class="text-center">System Overview</span>
+                                    <div class="overlay">
+                                        <div class="image-text"><a href='https://github.com/saurabhkumar1989/traffic_data_backend'>Click Here for More</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix" id='margin20'></div>
+                    </div>
                     <!--proj-end-->
                 </div>
                 <!-- /.project section end -->
                 <div class="skills-section section">
                     <span><i class="fa fa-rocket"></i><span class="about-me-project-inner">Skills &amp; Proficiency</span></span>
-                    <div class="clearfix" id="margin10"></div>
+                    <div class="clearfix" id='margin10'></div>
                     <div class="skillset">
                         <div class="item">
                             <h4 class="level-title">Programming Stack : </h4>
@@ -259,15 +209,15 @@
                         </div>
                         <div class="item">
                             <h4 class="level-title">Databases : </h4>
-                            <span>MySQL ,MongoDB and Hive</span>
+                            <span>MySQL and MongoDB</span>
                         </div>
                         <div class="item">
                             <h4 class="level-title">Machine Learning : </h4>
-                            <span>NLTK, Numpy, Gensim, scikit-learn</span>
+                            <span>Tensorflow, gensim, scikit-learn</span>
                         </div>
                         <div class="item">
                             <h4 class="level-title">Big Data Tool : </h4>
-                            <span>Hadoop</span>
+                            <span>Hadoop MapReduce and Hive</span>
                         </div>
                         <div class="item">
                             <h4 class="level-title">Web Framework : </h4>
@@ -279,7 +229,7 @@
                         </div>
                         <div class="item">
                             <h4 class="level-title">Web Technologies : </h4>
-                            <span>HTML5, CSS3&amp;less, Amazon Web Services and Git</span>
+                            <span>HTML5, CSS3&less, Amazon Web Services and Git</span>
                         </div>
 
                     </div>
@@ -310,7 +260,7 @@
                 <!--//education-container-->
                 <div class="sidebar-module">
                     <span><i class="fa fa-address-book-o"></i><span class="about-me-education">Contact</span></span>
-                    <div id="margin10"></div>
+                    <div id='margin10'></div>
                     <ul class="list-unstyled contact-list">
                         <li class="email contact-margin"><i class="fa fa-envelope"></i><a href="mailto:saurabhkumar.spsu@gmail.com">saurabhkumar.spsu@gmail</a></li>
                         <li class="linkedin contact-margin"><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/saurabh-kumar-22179227/">saurabh-kumar-22179227</a></li>
@@ -346,6 +296,7 @@
     <script src="js/jquery.min.js"></script>
     <script>
         window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+
     </script>
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
