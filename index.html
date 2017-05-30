@@ -103,19 +103,74 @@
                             <div class="project-description">
                                 <span class="project-tagline">The primary objective of this project is to triangulate road traffic incidents using social media data. Once geo-location data of the traffic incidents extracted, build spatial data layer over from the over Google map to display all of these incidents.</span>
                             </div>
+
                             <div class="project-description well">
+                                <h4><strong>Motivation</strong></h4>
+                                <p>Loads of data is generated on a daily basis on social platforms in the form of congestion notifications, slow moving traffic updates, traffic images, and news ticker data among others. These valuable pieces of information can be of great value to traffic administrators and commuters in proactive monitoring, decision making and effective analysis of the traffic condition in that particular area. With effective and proactive traffic administration and navigation as the primary focus, this project will tackle these problems by introducing a real-time system that takes the advantages of the social media data and combines with existing Geographical Information System like Google maps for real-time detection and diagnosis of traffic incidents.</p>
+
+                                <h4><strong>Project Detail</strong></h4>
+                                <p>Four major component for this projet are:</p>
                                 <ul class="">
                                     <li>
-                                        <p>Using deep learning skip gram based feature extraction method from text.</p>
+                                        <span class='prj-subheading'>Data Extraction</span>
+                                        <p>I tried to look for the existing freely available social media posts database for this project but I had no luck. So, I decided to go ahead to gather social media data by my own ( in my case only Twitter - for now). The data collector program was developed using Python( it was integrated into the Windows services ) to gathered tweets for a period of six months. For more visit <a href="https://github.com/SkumarAG/twitterFeedExtractor"><strong>git page here</strong></a></p>
+                                    </li>
+                                    <li>
+                                        <span class='prj-subheading'>Classifier Design</span>
+                                        <p>The dataset contained tweets related to politics, personal communications, product promotions, traffic related incidents and much more. To filter out the tweets linked with traffic-related incidents, machine learning based SVM classifier was used. It consist of three major four major parts :</p>
+                                        <div class="prj-image center-block"><img id='img-classifier' src="https://github.com/saurabhkumar1989/deeplearning/blob/master/files/classifier.JPG?raw=true" class="img-responsive" alt="Cinque Terre"></div>
+                                        <div class="clearfix" id="margin10"></div>
+                                        <div class="prj-subheading-detail col-md-12">
+                                            <div class="prj-subheading-outer">
+                                                <span class='prj-subheading'>1. Text Preprocessing</span>
+                                                <span> Tweets contains substantial noise in it, like URLs, emoticons. In order to remove these unwanted entities from the text, regular expression (regex) used.</span>
+                                            </div>
+                                            <div class="prj-subheading-outer">
+                                                <span class='prj-subheading'>2. Text Feature Extraction</span>
+                                                <span> To convert a tweet into a feature vector, previously i had used the Bag of Words (BOW) method. The BOW method generates a term frequency model, which is basically a list of numbers produced on the basis of how many times a term is appearing in the text but problem BOW ignore the semantics of the words i.e. BOW not able to capture the relation between words. It treats every word as an individual identity. To overcome this, skip ngram based word2vec model used for feature extraction.
+                                            </span>
+                                            </div>
+                                            <div class="prj-subheading-outer">
+                                                <span class='prj-subheading'>3. Classifier Algorithm</span>
+                                                <span>
+                                                    Different supervised classifier algorithms tried over the extracted data and found that the classifiers with complex decision had low accuracy. As an example Neural Network (with two layers) - 54%, Support Vector Machine (SWM) with Gaussian kernel - 94%, SVM with polynomial (of degree two) kernel - 93 %, Logistic Regression - 94 %. for more result click here -
+                                                    <a href="https://drive.google.com/file/d/0BzZu1d0kHHMWbXVLNXVvNlVJVEk/view?usp=sharing">
+                                                        <strong> detail data.</strong>
+                                                    </a>The main cause of this was evil of over-fitting as when the data was plotted, I figured out that some classifiers were overfitting over training data.
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li id="notshow">asa</li>
+                                    <li>
 
+                                        <span class='prj-subheading'>Geo parsing location information.</span>
+                                        <p>Note - I am still working on this part</p>
+                                        <p>This is the most stressful part of the entire project. Earlier I thought to detect every part of the location information (like a street name, places and building name etc.) but now I am narrowing down it to streets and places ( In future, I will expand it for other location relation information also). To find out the street names I am taking a hybrid approach i.e. I am using name entity recognition for buildings and gazetteer for toponym detection. </p>
                                     </li>
-                                    <li>
-                                        <p>Created text classifier models using Neural Network, Support Vector Machine (with Gaussian and polynomial kernel) and accuracy of 93 %.</p>
-                                    </li>
-                                    <li>
-                                        <p>Geo parsing location information using Name Entity recognition for buildings and gazetteer for toponym detection. </p>
-                                    </li>
-                                </ul>
+                                    </ul>
+
+                                  
+
+                                          
+                                        <h4><strong>Key Point</strong></h4>
+                                        <ul class="">
+                                            <li>
+                                                <p>Using deep learning skip gram based feature extraction method from text.</p>
+
+                                            </li>
+                                            <li>
+                                                <p>Created text classifier models using Neural Network, Support Vector Machine (with Gaussian and polynomial kernel) and accuracy of 93 %.</p>
+                                            </li>
+                                            <li>
+                                                <p>Geo parsing location information using Name Entity recognition for buildings and gazetteer for toponym detection. </p>
+                                            </li>
+                                        </ul>
+                              
+
+                              
+
+
                             </div>
                         </div>
                         <div class="clearfix" id="margin10"></div>
@@ -185,7 +240,7 @@
                             </ul>
                             <div class="project-imgs clearfix text-center">
                                 <div class="prj-images">
-                                    <div class="prj-image center-block"><img id='img-web-app'src="https://raw.githubusercontent.com/saurabhkumar1989/traffic_data_backend/master/images/Capture.PNG" class="img-responsive" alt="Cinque Terre">
+                                    <div class="prj-image center-block"><img id='img-web-app' src="https://raw.githubusercontent.com/saurabhkumar1989/traffic_data_backend/master/images/Capture.PNG" class="img-responsive" alt="Cinque Terre">
                                         <span class="text-center">System Overview</span>
                                         <div class="overlay">
                                             <div class="image-text"><a href="https://github.com/saurabhkumar1989/traffic_data_backend">Click Here for More</a></div>
@@ -346,6 +401,7 @@
     <script src="js/jquery.min.js"></script>
     <script>
         window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+
     </script>
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->

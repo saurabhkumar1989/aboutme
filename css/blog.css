@@ -373,3 +373,17 @@ a:hover,a:active {
     height: 80%;
     width: 70%;
 }
+
+.prj-subheading {
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+#img-classifier {
+    height: 51%;
+    width: 50%;
+}
+
+#notshow {
+    visibility: hidden;
+}
