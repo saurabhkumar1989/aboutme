@@ -95,7 +95,7 @@
                     <span><i class="fa fa-archive"></i><span class="about-me-project-inner">Projects</span></span>
                     <div class="project-section">
                         <div class="project-heading">
-                            <a href="https://github.com/saurabhkumar1989/traffic_data_backend"><strong>Social media mining to locate traffic conditions</strong></a>
+                            <a href="https://github.com/saurabhkumar1989/traffic_data_backend" id='social-media-mining'><strong>Social media mining to locate traffic conditions</strong></a>
                             <div class="project-time">August 2017 - Current</div>
                         </div>
                         <div class="clearfix" id="margin10"></div>
@@ -136,59 +136,38 @@
                                                     Different supervised classifier algorithms tried over the extracted data and found that the classifiers with complex decision had low accuracy. As an example Neural Network (with two layers) - 54%, Support Vector Machine (SWM) with Gaussian kernel - 94%, SVM with polynomial (of degree two) kernel - 93 %, Logistic Regression - 94 %. for more result click here -
                                                     <a href="https://drive.google.com/file/d/0BzZu1d0kHHMWbXVLNXVvNlVJVEk/view?usp=sharing">
                                                         <strong> detail data.</strong>
-                                                    </a>The main cause of this was evil of over-fitting as when the data was plotted, I figured out that some classifiers were overfitting over training data.
+                                                    </a>The main cause of this was over-fitting as when the data was plotted, I figured out that some classifiers were overfitting over training data.
                                                 </span>
                                             </div>
                                         </div>
                                     </li>
                                     <li id="notshow">asa</li>
                                     <li>
-
                                         <span class='prj-subheading'>Geo parsing location information.</span>
-                                        <p>Note - I am still working on this part</p>
+                                        <p class='note'><i><strong>Note</strong> - I am still working on this part</i></p>
                                         <p>This is the most stressful part of the entire project. Earlier I thought to detect every part of the location information (like a street name, places and building name etc.) but now I am narrowing down it to streets and places ( In future, I will expand it for other location relation information also). To find out the street names I am taking a hybrid approach i.e. I am using name entity recognition for buildings and gazetteer for toponym detection. </p>
                                     </li>
-                                    </ul>
-
-                                  
-
-                                          
-                                        <h4><strong>Key Point</strong></h4>
-                                        <ul class="">
-                                            <li>
-                                                <p>Using deep learning skip gram based feature extraction method from text.</p>
-
-                                            </li>
-                                            <li>
-                                                <p>Created text classifier models using Neural Network, Support Vector Machine (with Gaussian and polynomial kernel) and accuracy of 93 %.</p>
-                                            </li>
-                                            <li>
-                                                <p>Geo parsing location information using Name Entity recognition for buildings and gazetteer for toponym detection. </p>
-                                            </li>
-                                        </ul>
-                              
-
-                              
-
-
+                                </ul>
+                                <h4><strong>Key Point</strong></h4>
+                                <ul class="">
+                                    <li>
+                                        <p>Using deep learning skip gram based feature extraction method from text.</p>
+                                    </li>
+                                    <li>
+                                        <p>Created text classifier models using Neural Network, Support Vector Machine (with Gaussian and polynomial kernel) and accuracy of 93 %.</p>
+                                    </li>
+                                    <li>
+                                        <p>Geo parsing location information using Name Entity recognition for buildings and gazetteer for toponym detection. </p>
+                                    </li>
+                                </ul>
+                                <!---->
                             </div>
                         </div>
-                        <div class="clearfix" id="margin10"></div>
-                        <div class="project-imgs clearfix text-center">
-                            <!--<div class="prj-images">
-                                <div class="prj-image center-block"><img src="https://raw.githubusercontent.com/saurabhkumar1989/traffic_data_backend/master/images/Capture.PNG" class="img-responsive" alt="Cinque Terre">
-                                    <span class="text-center">System Overview</span>
-                                    <div class="overlay">
-                                        <div class="image-text"><a href='https://github.com/saurabhkumar1989/traffic_data_backend'>Click Here for More</a></div>
-                                    </div>
-                                </div>
-                            </div>-->
-                        </div>
-                        <div class="clearfix" id="margin20"></div>
                     </div>
+                    <div class="clearfix" id="margin20"></div>
                     <div class="project-section">
                         <div class="project-heading">
-                            <a href="https://github.com/saurabhkumar1989/traffic_data_backend"><strong>Web Application to Visualize Traffic Incidents</strong></a>
+                            <a href="https://github.com/saurabhkumar1989/traffic_data_backend" id='web-app-traffic'><strong>Web Application to Visualize Traffic Incidents</strong></a>
                             <div class="project-time">January 2017 - May 2017</div>
                         </div>
                         <div class="clearfix" id="margin10"></div>
@@ -199,30 +178,34 @@
                         </div>
                         <div class="clearfix" id="margin10"></div>
                         <div class="project-description well">
+                            <h4><strong>Background</strong></h4>
+                            This web application was built over the Social Media Mining project data to visualise the traffic events using Google maps. This project consists of a web interface for the user that can plot incidents on the map and filter down the data with city level granularity.
+                            <p class='note'><i><strong>Note</strong> - Location data manually inserted into the database as name entity recognition module was not operating properly.</i></p>
                             <h4><strong>System Details</strong></h4>
-                            <p>The overall system is composed of...</p>
-
-                            <h4><strong>Application Tier</strong></h4>
-                            <p>This layer composed of Data Extractor, Web Framework and Inverted Index builder</p>
-                            <ul class="">
-                                <li><strong>Data Extractor</strong>
-                                    <p>Python script hits the twitter rest API's and stores the data in the MySQL server hosted on Amazon EC2.</p>
+                            <p>This section will describe following modules...</p>
+                            <ul>
+                                <li>
+                                    Enterprise Tier
                                 </li>
-                                <li><strong>Inverted Index Builder</strong>
-                                    <p>Python program to build index data structure in MongoDB that searches for and identifies items in a database correspond to keywords or characters specified by the user.</p>
+                                <li>
+                                    Application Tier
                                 </li>
-                                <li><strong>Web framework</strong>
-                                    <p>django framework to server all the HTTP request.</p>
+                                <li>
+                                    Client Tier
                                 </li>
                             </ul>
-                            <h4><strong>Client Tier</strong></h4>
-                            <p>A responsive graphical user interface powered by Bootstrap, jquery and HTML5 for application to users to interact with the data.</p>
-
                             <h4><strong>Enterprise Tier</strong></h4>
-                            <p>This layer contains MongoDB database having inverted indexes for search and MySQL database for the tweet data like tweet text, user information etc.</p>
+                            <p>It's consist of MySQL database to store all the tweet data and MongoDB for Inverted indexes. MySQL stores all the information like tweets text, tweets' posted date, classifier output i.e. whether the given tweet contain traffic information or not. Overall, it acts as a system backbone.</p>
 
+                            <h4><strong>Application Tier</strong></h4>
+                            <p>It consists of protocols that focus on inter-process communication through an IP network to provide robust communication interface for end-user services.</p>
+                            <p> This layer serve the all HTTP requests generated by users utilizing django framework. In addition, application logic like classifier algorithms, Named Entity Recognition (NER) and batch jobs to extract the twitter data.</p>
 
-                            <h4>Technologies Used</h4>
+                            <h4><strong>Client Tier</strong></h4>
+                            <p>A simple web interface</p>
+                            <hr>
+
+                            <h4><strong>Technologies Used</strong></h4>
                             <ul class="">
                                 <li>
                                     <p><strong>Programming Language</strong>: Python, javascript</p>
@@ -234,7 +217,7 @@
                                     <p><strong>Web Technologies</strong>: Django, jQuery and Bootstrap 3</p>
                                 </li>
                                 <li>
-                                    <p><strong>Cloud Computing Platform</strong>: AWS EC2 Instance</p>
+                                    <p><strong>Cloud Computing Platform</strong>: AWS</p>
                                 </li>
 
                             </ul>
@@ -298,9 +281,52 @@
                                 </div>
                             </div>-->
                         </div>
-                        <div class="clearfix" id="margin20"></div>
-                    </div>
 
+                    </div>
+                    <div class="clearfix" id="margin20"></div>
+                    <!--proj-end-->
+                    <div class="project-section">
+                        <div class="project-heading">
+                            <a href="https://github.com/saurabhkumar1989/adminPortal"><strong>Admin Portal</strong></a>
+                            <div class="project-time">May 2017 - June 2017</div>
+                        </div>
+                        <div class="clearfix" id="margin10"></div>
+                        <div class="proj-summary-text">
+                            <div class="project-description">
+                                <span class="project-tagline">Designed and developed a single page web portal to handle customer’s periodic (weekly and monthly) passes.</span>
+
+                            </div>
+                            <div class="project-description well">
+                                <p>
+                                    Designed and developed a single page web portal to handle customer’s periodic (weekly and monthly) passes.The motivation behind this app is to revive the old concept that I learned. In case if you want to look into - <a href='https://saurabhkumar1989.github.io/adminPortal/#/home'><strong>here is the link</strong></a>
+                                </p>
+                                <hr>
+
+                                <h4><strong>Technologies Used</strong></h4>
+                                <ul class="">
+                                    <li>
+                                        <p><strong>Web Framework</strong>Angular js</p>
+                                    </li>
+                                    <li>
+                                        <p><strong>Front End</strong>: HTML5 and Bootstrap 3</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="clearfix" id="margin10"></div>
+                        <div class="project-imgs clearfix text-center">
+                            <!--<div class="prj-images">
+                                <div class="prj-image center-block"><img id="img-pubmed" src="https://github.com/saurabhkumar1989/pubmedAPI/blob/master/files/pubmedimage1.jpg?raw=true" class="img-responsive" alt="Image">
+                                    <span class="text-center">System Overview</span>
+                                    <div class="overlay">
+                                        <div class="image-text"><a href="https://github.com/saurabhkumar1989/pubmedAPI/">Click Here for More</a></div>
+                                    </div>
+                                </div>
+                            </div>-->
+                        </div>
+
+                    </div>
+                    <div class="clearfix" id="margin20"></div>
                     <!--proj-end-->
                 </div>
                 <!-- /.project section end -->

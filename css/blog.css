@@ -387,3 +387,7 @@ a:hover,a:active {
 #notshow {
     visibility: hidden;
 }
+
+.note {
+    font-size: 14px;
+}
