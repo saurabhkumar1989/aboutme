@@ -3109,7 +3109,18 @@ p.web-app-description {
 	margin-top: 30px;
 	font-weight: 300;
 }
-
+h3.web-app-description-heading {
+	color: #232323;
+    margin-top: 1.6875rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+li.web-app-description-sub-heading{
+	color: #232323;
+    margin-top: 1.6875rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
 .mbr-section-title.web-app-description-heading {
 	color: #232323;
 	margin-top: 1.6875rem;

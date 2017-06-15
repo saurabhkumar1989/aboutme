@@ -76,20 +76,20 @@
 		<div class="container">
 			<div class="row">
 				<div class="mbr-section col-md-12">
-					<h3 class='mbr-section-title web-app-description-heading'> Motivation </h3>
+					<h3 class='web-app-description-heading'> Motivation </h3>
 					<p class="web-app-description">Loads of data is generated on a daily basis on social platforms in the form of congestion notifications, slow moving traffic updates, traffic images, and news ticker data among others. These valuable pieces of information can be of great value to traffic administrators and commuters in proactive monitoring, decision making and effective analysis of the traffic condition in that particular area. With effective and proactive traffic administration and navigation as the primary focus, this project trying to tackle these problems by introducing a real-time system that takes the advantages of the social media data and combines with existing Geographical Information System like Google maps for real-time detection and diagnosis of traffic incidents.
 					</p>
 
-					<h3 class='mbr-section-title web-app-description-heading'> Introduction </h3>
+					<h3 class='web-app-description-heading'> Introduction </h3>
 					<p class="web-app-description">The primary objective of this project is to triangulate road traffic incidents using social media data. Once traffic incidents geo-location data extracted, a spatial data layer built over Google map to display all of these incidents.
 					</p>
-					<h3 class='mbr-section-title web-app-description-heading'> Project Detail </h3>
+					<h3 class='web-app-description-heading'> Project Detail </h3>
 					<p class="web-app-description">Major component are: </p>
 					<ol>
-						<li class='mbr-section-title web-app-description-sub-heading'>Data Extraction</li>
+						<li class='web-app-description-sub-heading'>Data Extraction</li>
 						<p class="web-app-description">I tried to look for the existing freely available social media posts database for this project but I had no luck. So, I decided to go ahead to gather social media data by my own ( in my case only Twitter - for now). The data collector program was developed using Python( it was integrated into the Windows services ) to gathered tweets for a period of six months. For more visit <a href="https://github.com/SkumarAG/twitterFeedExtractor"><strong>git page here</strong></a>.
 						</p>
-						<li class='mbr-section-title web-app-description-sub-heading'>Classifier Design</li>
+						<li class='web-app-description-sub-heading'>Classifier Design</li>
 						<div class="card cart-block">
 							<div class="card-img">
 								<img src="https://raw.githubusercontent.com/saurabhkumar1989/deeplearning/master/files/classifier.JPG" style="
@@ -98,18 +98,18 @@
 						</div>
 						<p class="web-app-description">The dataset contained tweets related to politics, personal communications, product promotions, traffic related incidents and much more. To filter out the tweets linked with traffic-related incidents, machine learning based SVM classifier was used. It consist of three major parts :</p>
 						<ul>
-							<li class='mbr-section-title web-app-description-sub-sub-heading'> Text Preprocessing</li>
+							<li class='web-app-description-sub-sub-heading'> Text Preprocessing</li>
 							<p class="web-app-description">Tweets contains substantial noise in it, like URLs, emoticons. In order to remove these unwanted entities from the text, regular expression (regex) used.</p>
-							<li class='mbr-section-title web-app-description-sub-sub-heading'> Text Feature Extraction</li>
+							<li class='web-app-description-sub-sub-heading'> Text Feature Extraction</li>
 							<p class="web-app-description">To convert a tweet into a feature vector, previously i had used the Bag of Words (BOW) method. The BOW method generates a term frequency model, which is basically a list of numbers produced on the basis of how many times a term is appearing in the text but problem BOW ignore the semantics of the words i.e. BOW not able to capture the relation between words. It treats every word as an individual identity. To overcome this, skip ngram based word2vec model used for feature extraction.</p>
-							<li class='mbr-section-title web-app-description-sub-sub-heading'> Classifier Algorithm</li>
+							<li class='web-app-description-sub-sub-heading'> Classifier Algorithm</li>
 							<p class="web-app-description">Different supervised classifier algorithms tried over the extracted data and found that the classifiers with complex decision had low accuracy. As an example Neural Network (with two layers) - 54%, Support Vector Machine (SWM) with Gaussian kernel - 94%, SVM with polynomial (of degree two) kernel - 93 %, Logistic Regression - 94 %. for more result click here -
 								<a href="https://drive.google.com/file/d/0BzZu1d0kHHMWbXVLNXVvNlVJVEk/view?usp=sharing">
 									<strong> detail data.</strong>
 								</a>. The main cause of this was over-fitting as when the data was plotted, I figured out that some classifiers were overfitting over training data.</p>
 						</ul>
 
-						<li class='mbr-section-title web-app-description-sub-heading'>Geo parsing location information.</li>
+						<li class='web-app-description-sub-heading'>Geo parsing location information.</li>
 						<div class='note'>Note: I am still working on this part</div>
 						<p class="web-app-description">To convert a tweet into a feature vector, previously i had used the Bag of Words (BOW) method. The BOW method generates a term frequency model, which is basically a list of numbers produced on the basis of how many times a term is appearing in the text but problem BOW ignore the semantics of the words i.e. BOW not able to capture the relation between words. It treats every word as an individual identity. To overcome this, skip ngram based word2vec model used for feature extraction.</p>
 						<div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 40px; padding-bottom: 80px;">
@@ -119,7 +119,7 @@
 								</div>
 							</div>
 						</div>
-						<h3 class='mbr-section-title web-app-description-heading'> Key Points </h3>
+						<h3 class='web-app-description-heading'> Key Points </h3>
 						<ul>
 							<li>
 								<p class="web-app-description">Deep learning Word2Vec method for feature extraction.</p>
