@@ -62,7 +62,7 @@
       display: none; }
   .navbar-dropdown .hamburger-icon {
     content: "";
-    width: 16px;
+    width: 22px;
     -webkit-box-shadow: 0 -6px 0 1px,0 0 0 1px,0 6px 0 1px;
     -moz-box-shadow: 0 -6px 0 1px,0 0 0 1px,0 6px 0 1px;
     box-shadow: 0 -6px 0 1px,0 0 0 1px,0 6px 0 1px; }

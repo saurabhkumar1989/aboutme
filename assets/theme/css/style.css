@@ -3103,7 +3103,7 @@ html.is-builder .article .lead:not([data-app-remove-it]) + div .btn {
 	list-style-type: none;
 }
 
-.mbr-section-title.web-app-description {
+p.web-app-description {
 	font-size: 1.5rem;
 	color: rgba(35, 35, 35, 0.64);
 	margin-top: 30px;
