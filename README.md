@@ -1,3 +1,3 @@
 # Resume Template
 
-URL - https://saurbkumar.github.io/aboutme/
+URL - https://saurbkumar.github.io/aboutme
